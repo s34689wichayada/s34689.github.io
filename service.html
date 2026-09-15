@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar (แถบเมนู) -->
+    <header class="navbar">
+        <div class="logo">MY PORTFOLIO</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <!-- ใส่ class="active" เพื่อบอกว่าอยู่หน้านี้ -->
+                <li><a href="service.html" class="active">SERVICE</a></li> 
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- เนื้อหาหน้า Service -->
+    <section class="content-container">
+        <h1>MY SERVICES & WORKS</h1>
+        <p class="subtitle">บริการและผลงานที่ผ่านมาของเรา</p>
+
+        <!-- ตารางแสดงการบริการ/ผลงาน -->
+        <div class="card-grid">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>ออกแบบเว็บไซต์ตามความต้องการ สวยงาม ทันสมัย รองรับมือถือ</p>
+            </div>
+            <div class="card">
+                <h3>Frontend Development</h3>
+                <p>เขียนโค้ด HTML, CSS, JavaScript และ Deploy ขึ้น GitHub Pages</p>
+            </div>
+            <div class="card">
+                <h3>UX/UI Design</h3>
+                <p>วางโครงสร้างเว็บไซต์ (Wireframe) และดีไซน์ประสบการณ์ผู้ใช้</p>
+            </div>
+        </div>
+
+        <br><br>
+        <!-- ปุ่มกดย้อนกลับหน้าหลัก -->
+        <a href="index.html" class="btn btn-dark">← กลับหน้าหลัก</a>
+    </section>
+</body>
+</html>
