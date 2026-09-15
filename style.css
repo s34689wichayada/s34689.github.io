@@ -137,24 +137,29 @@ body {
     font-weight: 500;
 }
 
-/* ปุ่มกดสไตล์มินิมอล */
 .action-buttons {
     display: flex;
-    gap: 12px;
+    gap: 10px;
+    flex-wrap: wrap; /* รองรับกรณีหน้าจอเล็ก ปุ่มจะขึ้นบรรทัดใหม่อัตโนมัติ */
+    margin-top: 25px;
 }
 
 .btn {
-    padding: 10px 22px;
+    padding: 10px 18px;
     border-radius: 8px;
     font-size: 13px;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-outline {
     border: 1.5px solid #1a2b4c;
     color: #1a2b4c;
+    background-color: transparent;
 }
 
 .btn-outline:hover {
@@ -164,8 +169,10 @@ body {
 .btn-fill {
     background-color: #1a2b4c;
     color: #ffffff;
+    border: 1.5px solid #1a2b4c;
 }
 
 .btn-fill:hover {
     background-color: #0f1b33;
+    border-color: #0f1b33;
 }
