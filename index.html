@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Home</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Bar (เมนูนำทาง) -->
     <header class="navbar">
-        <div class="logo">MY PORTFOLIO</div>
+        <div class="logo">PORTFOLIO<span>.</span></div>
         <nav>
             <ul>
                 <li><a href="index.html" class="active">HOME</a></li>
@@ -20,17 +20,21 @@
         </nav>
     </header>
 
-    <!-- Hero Section (ส่วนเนื้อหาหลักคล้ายในรูป) -->
-    <section class="hero">
-        <div class="hero-image">
-            <!-- ใส่รูปของคุณตรงนี้ -->
-            <img src="https://via.placeholder.com/600x400" alt="Profile Image">
-        </div>
+    <main class="hero-wrapper">
         <div class="hero-card">
-            <h1>If you can dream it, you can do it.</h1>
-            <p>ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของฉัน รวมผลงาน ประวัติ และช่องทางการติดต่อ</p>
-            <a href="about.html" class="btn">READ MORE</a>
+            <div class="hero-image">
+                <img src="POK.jpg" alt="Profile Image">
+            </div>
+            <div class="hero-content">
+                <span class="tag">WELCOME TO MY WORLD</span>
+                <h1>If you can dream it, <span>you can do it.</span></h1>
+                <p>ยินดีต้อนรับสู่เว็บไซต์ Portfolio รวมผลงาน ประวัติ ทักษะ และช่องทางการติดต่ออย่างเป็นทางการ</p>
+                <div class="button-group">
+                    <a href="about.html" class="btn btn-glow">เกี่ยวกับฉัน</a>
+                    <a href="service.html" class="btn btn-outline">ผลงาน / บริการ</a>
+                </div>
+            </div>
         </div>
-    </section>
+    </main>
 </body>
 </html>
