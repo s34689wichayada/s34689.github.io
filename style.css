@@ -1,328 +1,171 @@
+/* ==================== Modern About Styling ==================== */
 * {
-    margin: 0;
-    padding: 0;
+    font-family: 'Poppins', 'Kanit', sans-serif;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #f4f4f4;
-}
-
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 80px;
-    background-color: #ffffff;
-}
-
-.logo {
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 2px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #555;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-nav ul li a.active, nav ul li a:hover {
-    color: #1a2b4c;
-    border-bottom: 2px solid #1a2b4c;
-}
-
-/* ==================== Hero Section ปรับใหม่ให้รูปพอดี ==================== */
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 80px); /* ความสูงพอดีหน้าจอ */
-    padding: 20px 80px;
-    position: relative;
-    box-sizing: border-box;
-}
-
-/* กล่องใส่รูปภาพ */
-.hero-image {
-    width: 55%;           /* ปรับสัดส่วนพื้นที่รูป */
-    max-width: 650px;
-    display: flex;
-    justify-content: center;
-}
-
-/* ตัวรูปภาพ POK.jpg */
-.hero-image img {
-    width: 100%;
-    max-height: 480px;    /* กำหนดความสูงไม่ให้ล้นจอ */
-    object-fit: cover;     /* ครอปรูปให้ได้สัดส่วนสวยงามไม่เบี้ยว */
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* กล่องข้อความสีน้ำเงิน */
-.hero-card {
-    position: absolute;
-    right: 10%;            /* จัดระยะห่างจากขอบขวา */
-    width: 400px;
-    background-color: #1a2b4c;
-    color: white;
-    padding: 35px;
-    border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-.hero-card h1 {
-    font-size: 32px;
-    margin-bottom: 15px;
-    line-height: 1.2;
-}
-
-.hero-card p {
-    font-size: 14px;
-    color: #ccc;
-    margin-bottom: 25px;
-    line-height: 1.6;
-}
-
-/* Button */
-.btn {
-    display: inline-block;
-    padding: 10px 24px;
-    border: 1px solid white;
-    color: white;
-    text-decoration: none;
-    border-radius: 20px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: white;
-    color: #1a2b4c;
-}
-
-.content-container {
-    padding: 80px;
-    text-align: center;
-}
-/* เพิ่มเติมสำหรับเนื้อหาหน้าทั่วไป */
-.subtitle {
-    color: #666;
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
-
-/* ปุ่มแบบสีเข้ม (สำหรับใช้บนพื้นหลังสีขาว) */
-.btn-dark {
-    border: 1px solid #1a2b4c;
-    color: #1a2b4c;
-}
-
-.btn-dark:hover {
-    background-color: #1a2b4c;
-    color: white;
-}
-
-/* จัดเลย์เอาต์การ์ดสำหรับหน้า Service */
-.card-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.card {
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    width: 280px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    text-align: left;
-}
-
-.card h3 {
-    color: #1a2b4c;
-    margin-bottom: 10px;
-}
-
-.card p {
-    color: #666;
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-/* กล่องข้อมูลการติดต่อสำหรับหน้า Contact */
-.contact-box {
-    background: white;
-    max-width: 450px;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    text-align: left;
-}
-
-.contact-box p {
-    margin-bottom: 15px;
-    font-size: 16px;
-    color: #333;
-}
-/* 1. รีเซ็ตขอบหน้าเว็บทั้งหมด ให้ขยายได้เต็มหน้าจอ */
-html, body {
-    height: 100%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f8f9fa;
+    background-color: #f0f2f5;
 }
 
-/* 2. จัดโครงสร้างหลักให้ Navbar อยู่บน และ Content อยู่ตรงกลาง */
-body {
+/* บังคับให้ส่วนเนื้อหาอยู่กึ่งกลางจอเป๊ะ */
+.about-page {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* 3. ส่วน About Section: ดึงเนื้อหามาไว้ กึ่งกลางจอพอดี */
-.about-section {
-    flex: 1; /* เติมเต็มพื้นที่ที่เหลือด้านล่าง Navbar */
-    display: flex;
-    justify-content: center; /* จัดกึ่งกลางแนวนอน */
-    align-items: center;     /* จัดกึ่งกลางแนวตั้ง */
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
     padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
 }
 
-/* 4. กล่องการ์ดเนื้อหาตรงกลาง */
-.about-container {
+/* กล่องการ์ดเน้นเงาแบบนุ่มนวล */
+.about-card {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
+    gap: 45px;
     max-width: 950px;
     width: 100%;
     background: #ffffff;
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    margin: auto; /* ช่วยดึงเข้ากึ่งกลางอีกชั้น */
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
 }
 
-/* 5. ฝั่งรูปภาพ */
-.about-image {
+/* ตกแต่งรูปภาพให้ดูมีมิติ */
+.profile-frame {
     flex: 1;
     display: flex;
     justify-content: center;
 }
 
-.about-image img {
+.profile-frame img {
     width: 100%;
-    max-width: 300px;
-    height: 360px;
+    max-width: 320px;
+    height: 380px;
     object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(26, 43, 76, 0.15);
 }
 
-/* 6. ฝั่งเนื้อหาข้อความ */
-.about-details {
-    flex: 1.4;
-    text-align: left;
+/* ฝั่งเนื้อหาข้อความ */
+.profile-info {
+    flex: 1.3;
 }
 
-.about-details h1 {
-    font-size: 26px;
+.badge {
+    background-color: #e8f0fe;
     color: #1a2b4c;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
     letter-spacing: 1px;
-    margin-bottom: 5px;
 }
 
-.about-details h2 {
+.profile-info h1 {
+    font-size: 32px;
+    color: #1a2b4c;
+    margin: 10px 0 5px 0;
+}
+
+.profile-info h2 {
     font-size: 18px;
-    color: #333;
-    margin-bottom: 8px;
-}
-
-.about-details .role {
-    font-size: 14px;
-    color: #666;
+    color: #444;
+    font-weight: 400;
     margin-bottom: 15px;
 }
 
-.about-details .role span {
-    color: #0056b3;
+.profile-info h2 span {
+    color: #1a2b4c;
     font-weight: 600;
 }
 
-.about-details .description {
-    line-height: 1.6;
-    color: #555;
+.bio-text {
     font-size: 14px;
+    color: #666;
+    line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.info-group {
-    margin-bottom: 15px;
+/* จัดส่วนการศึกษา/ความสนใจเป็นบล็อกคู่ */
+.info-grid {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
-.info-group h3 {
-    font-size: 14px;
-    color: #1a2b4c;
-    margin-bottom: 8px;
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 10px;
+    flex: 1;
 }
 
-.info-group ul {
-    list-style: none;
-    padding-left: 0;
+.info-item .icon {
+    font-size: 20px;
 }
 
-.info-group ul li {
-    color: #555;
+.info-item strong {
+    display: block;
     font-size: 13px;
+    color: #1a2b4c;
 }
 
-.skills-tags {
+.info-item p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+/* แท็กทักษะความสามารถ */
+.skills-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    margin-bottom: 25px;
 }
 
-.skills-tags span {
-    background-color: #eef2f7;
-    color: #1a2b4c;
-    padding: 5px 12px;
-    border-radius: 15px;
+.skill-tag {
+    background-color: #1a2b4c;
+    color: #ffffff;
     font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 20px;
     font-weight: 500;
 }
 
-/* ปุ่มกด */
-.button-group {
+/* ปุ่มกดสไตล์มินิมอล */
+.action-buttons {
     display: flex;
     gap: 12px;
-    margin-top: 25px;
 }
 
-.btn-primary {
+.btn {
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-outline {
+    border: 1.5px solid #1a2b4c;
+    color: #1a2b4c;
+}
+
+.btn-outline:hover {
+    background-color: #f0f2f5;
+}
+
+.btn-fill {
     background-color: #1a2b4c;
-    color: white;
-    border: 1px solid #1a2b4c;
+    color: #ffffff;
 }
 
-.btn-primary:hover {
-    background-color: #0d172a;
+.btn-fill:hover {
+    background-color: #0f1b33;
 }
