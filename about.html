@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Wichayada</title>
+    <title>Portfolio - About Me</title>
     <link rel="stylesheet" href="style.css">
-    <!-- ดึงฟอนต์ Poppins & Kanit มาใช้เพิ่มความพรีเมียม -->
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
     <header class="navbar">
-        <div class="logo">MY PORTFOLIO</div>
+        <div class="logo">PORTFOLIO<span>.</span></div>
         <nav>
             <ul>
                 <li><a href="index.html">HOME</a></li>
@@ -22,56 +20,50 @@
         </nav>
     </header>
 
-    <!-- Content Center Section -->
-    <main class="about-page">
+    <main class="about-wrapper">
         <div class="about-card">
-            
-            <!-- รูปโปรไฟล์ฝั่งซ้าย -->
-            <div class="profile-frame">
+            <div class="about-image">
                 <img src="IMG_5016.jpg" alt="Profile Image">
             </div>
-
-            <!-- รายละเอียดฝั่งขวา -->
-            <div class="profile-info">
-                <span class="badge">GET TO KNOW ME</span>
-                <h1>ABOUT ME</h1>
-                <h2>สวัสดีครับ/ค่ะ, <span>[ชื่อ-นามสกุลของคุณ]</span></h2>
-                <p class="bio-text">
-                    นักพัฒนาเว็บไซต์ที่หลงใหลในการสร้างสรรค์ผลงาน ให้มีทั้งความสวยงามและความเป็นระเบียบเรียบร้อย มุ่งมั่นพัฒนาทักษะด้าน Web Development และ UX/UI Design อย่างต่อเนื่อง
+            <div class="about-content">
+                <span class="tag">GET TO KNOW ME</span>
+                <h1>ABOUT <span>ME</span></h1>
+                <h2>นักพัฒนาเว็บไซต์ & Designer</h2>
+                <p class="description">
+                    มุ่งมั่นในการสร้างสรรค์เว็บไซต์ให้มีความทันสมัย ใช้งานง่าย และตอบโจทย์ผู้ใช้งาน รองรับการแสดงผลบนทุกอุปกรณ์
                 </p>
 
                 <div class="info-grid">
-                    <div class="info-item">
+                    <div class="info-box">
                         <span class="icon">🎓</span>
                         <div>
                             <strong>การศึกษา</strong>
-                            <p>ปริญญาตรี สาขาคอมพิวเตอร์</p>
+                            <p>ปริญญาตรี สาขาเทคโนโลยีสารสนเทศ</p>
                         </div>
                     </div>
-                    <div class="info-item">
-                        <span class="icon">💻</span>
+                    <div class="info-box">
+                        <span class="icon">⚡</span>
                         <div>
                             <strong>ความสนใจ</strong>
-                            <p>Web Dev & UI/UX Design</p>
+                            <p>Frontend Dev & UI/UX Design</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- แท็กทักษะ -->
-                <div class="skills-wrapper">
-                    <span class="skill-tag">HTML5 / CSS3</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">UI/UX Design</span>
-                    <span class="skill-tag">Git & GitHub</span>
+                <div class="skills">
+                    <span class="skill-badge">HTML5</span>
+                    <span class="skill-badge">CSS3</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">Git / GitHub</span>
                 </div>
 
-                <!-- กลุ่มปุ่มกด -->
-                <div class="action-buttons">
-                    <a href="index.html" class="btn btn-outline">← กลับหน้าหลัก</a>
-                    <a href="contact.html" class="btn btn-fill">ติดต่องาน</a>
+                <!-- กลุ่มปุ่มนำทางเชื่อมต่อไปหน้าต่างๆ -->
+                <div class="button-group">
+                    <a href="index.html" class="btn btn-outline">← หน้าหลัก</a>
+                    <a href="service.html" class="btn btn-glow">ดูบริการ / ผลงาน</a>
+                    <a href="contact.html" class="btn btn-outline">ติดต่อเรา</a>
                 </div>
             </div>
-
         </div>
     </main>
 </body>
