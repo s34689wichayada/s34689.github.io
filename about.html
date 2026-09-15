@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - About</title>
+    <title>Portfolio - About Me</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- แถบเมนูนำทาง -->
     <header class="navbar">
         <div class="logo">MY PORTFOLIO</div>
         <nav>
@@ -19,12 +20,64 @@
         </nav>
     </header>
 
-    <section class="content-container">
-        <h1>ABOUT ME</h1>
-        <p>เนื้อหาประวัติส่วนตัวและประสบการณ์การทำงานของคุณ...</p>
-        <br>
-        <!-- ปุ่มกดย้อนกลับไปหน้าแรก -->
-        <a href="index.html" class="btn">← กลับหน้าหลัก</a>
+    <!-- ส่วนเนื้อหาเกี่ยวกับฉัน -->
+    <section class="about-section">
+        <div class="about-container">
+            
+            <!-- ฝั่งซ้าย: รูปภาพโปรไฟล์ -->
+            <div class="about-image">
+                <!-- เปลี่ยน profile.jpg เป็นชื่อไฟล์รูปภาพของคุณที่เก็บไว้ในโฟลเดอร์ images/ -->
+                <img src="images/profile.jpg" alt="รูปโปรไฟล์ของฉัน">
+            </div>
+
+            <!-- ฝั่งขวา: ข้อความแนะนำตัวและทักษะ -->
+            <div class="about-details">
+                <h1>ABOUT ME</h1>
+                <h2>สวัสดีครับ/ค่ะ! ฉันชื่อ [ชื่อ-นามสกุลของคุณ]</h2>
+                <p class="role">ตำแหน่ง/สายงานที่คุณสนใจ เช่น <span>Web Developer & UI Designer</span></p>
+
+                <!-- ไกด์ส่วนที่ 1: สรุปความเป็นตัวเรา -->
+                <p class="description">
+                    ฉันเป็นคนที่มีความสนใจเกี่ยวกับการพัฒนาเว็บไซต์และออกแบบประสบการณ์ผู้ใช้ (UX/UI) 
+                    ชอบเรียนรู้เทคโนโลยีใหม่ๆ และมุ่งมั่นที่จะพัฒนาผลงานที่มีคุณภาพ ตอบโจทย์การใช้งานจริง
+                </p>
+
+                <!-- ไกด์ส่วนที่ 2: ประวัติการศึกษา / ประวัติการทำงาน -->
+                <div class="info-group">
+                    <h3>🎓 การศึกษา (Education)</h3>
+                    <ul>
+                        <li><strong>ปริญญาตรี:</strong> สาขา [ชื่อสาขา] - [ชื่อมหาวิทยาลัย] (ปี 2020 - 2024)</li>
+                        <li><strong>มัธยมศึกษา:</strong> สายวิทย์-คณิต - [ชื่อโรงเรียน]</li>
+                    </ul>
+                </div>
+
+                <!-- ไกด์ส่วนที่ 3: ทักษะความสามารถ (Skills) -->
+                <div class="info-group">
+                    <h3>🛠 ทักษะและความสามารถ (Skills)</h3>
+                    <div class="skills-tags">
+                        <span>HTML5 / CSS3</span>
+                        <span>JavaScript</span>
+                        <span>UX/UI Design (Figma)</span>
+                        <span>Git & GitHub</span>
+                        <span>Responsive Design</span>
+                    </div>
+                </div>
+
+                <!-- ไกด์ส่วนที่ 4: ความสนใจหรือคติประจำใจ -->
+                <div class="info-group">
+                    <h3>💡 เป้าหมายและความสนใจ (Interests & Goals)</h3>
+                    <p>มีความชื่นชอบในการออกแบบอินเทอร์เฟซที่ใช้งานง่าย มุ่งมั่นพัฒนาทักษะการเขียนโค้ดเพื่อก้าวสู่การเป็น Full-Stack Developer ในอนาคต</p>
+                </div>
+
+                <!-- ปุ่มแอ็กชัน: ย้อนกลับหน้าแรก หรือ ดาวน์โหลด Resume -->
+                <div class="button-group">
+                    <a href="index.html" class="btn btn-dark">← กลับหน้าหลัก</a>
+                    <!-- หากมีไฟล์ Resume สามารถใส่ลิงก์ดาวน์โหลดตรงนี้ได้ -->
+                    <a href="images/resume.pdf" class="btn btn-primary" target="_blank">📄 ดาวน์โหลด Resume</a>
+                </div>
+
+            </div>
+        </div>
     </section>
 </body>
 </html>
