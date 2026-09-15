@@ -353,3 +353,16 @@ p {
     max-width: 850px;
     padding: 30px;
 }
+/* ==================== ปรับไอคอนรูปภาพในหน้า Service ==================== */
+
+.card-icon {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.card-icon img {
+    width: 48px;            /* กำหนดความกว้างของไอคอน */
+    height: 48px;           /* กำหนดความสูงของไอคอน */
+    object-fit: contain;     /* รักษา สัดส่วนรูป ไม่ให้เบี้ยว */
+}
