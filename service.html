@@ -3,48 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Service</title>
+    <title>Portfolio - Services</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar (แถบเมนู) -->
     <header class="navbar">
-        <div class="logo">MY PORTFOLIO</div>
+        <div class="logo">PORTFOLIO<span>.</span></div>
         <nav>
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <!-- ใส่ class="active" เพื่อบอกว่าอยู่หน้านี้ -->
-                <li><a href="service.html" class="active">SERVICE</a></li> 
+                <li><a href="service.html" class="active">SERVICE</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- เนื้อหาหน้า Service -->
-    <section class="content-container">
-        <h1>MY SERVICES & WORKS</h1>
-        <p class="subtitle">บริการและผลงานที่ผ่านมาของเรา</p>
+    <main class="page-wrapper">
+        <div class="section-header">
+            <span class="tag">WHAT I DO</span>
+            <h1>MY <span>SERVICES</span> & WORKS</h1>
+            <p>บริการด้านการพัฒนาเว็บไซต์และตัวอย่างผลงานที่เชี่ยวชาญ</p>
+        </div>
 
-        <!-- ตารางแสดงการบริการ/ผลงาน -->
-        <div class="card-grid">
-            <div class="card">
-                <h3>Web Design</h3>
-                <p>ออกแบบเว็บไซต์ตามความต้องการ สวยงาม ทันสมัย รองรับมือถือ</p>
+        <!-- การ์ดบริการ 3 คอลัมน์ -->
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="card-icon">💻</div>
+                <h3>Web Development</h3>
+                <p>พัศนาเว็บไซต์ด้วย HTML, CSS, JavaScript และรองรับการแสดงผลทุกขนาดหน้าจอ (Responsive)</p>
             </div>
-            <div class="card">
-                <h3>Frontend Development</h3>
-                <p>เขียนโค้ด HTML, CSS, JavaScript และ Deploy ขึ้น GitHub Pages</p>
+            <div class="service-card">
+                <div class="card-icon">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p>ออกแบบอินเทอร์เฟซและประสบการณ์ผู้ใช้ให้สวยงาม ใช้งานง่าย สะอาดตาด้วยหลักการสมัยใหม่</p>
             </div>
-            <div class="card">
-                <h3>UX/UI Design</h3>
-                <p>วางโครงสร้างเว็บไซต์ (Wireframe) และดีไซน์ประสบการณ์ผู้ใช้</p>
+            <div class="service-card">
+                <div class="card-icon">🚀</div>
+                <h3>GitHub Deployment</h3>
+                <p>นำเว็บไซต์ขึ้นโฮสต์บน GitHub Pages พร้อมตั้งค่าโดเมนและจัดการ Source Code อย่างเป็นระบบ</p>
             </div>
         </div>
 
-        <br><br>
-        <!-- ปุ่มกดย้อนกลับหน้าหลัก -->
-        <a href="index.html" class="btn btn-dark">← กลับหน้าหลัก</a>
-    </section>
+        <!-- กลุ่มปุ่มนำทาง -->
+        <div class="button-group center-buttons">
+            <a href="about.html" class="btn btn-outline">← เกี่ยวกับฉัน</a>
+            <a href="contact.html" class="btn btn-glow">ติดต่องาน / สอบถามเพิ่มเติม →</a>
+        </div>
+    </main>
 </body>
 </html>
