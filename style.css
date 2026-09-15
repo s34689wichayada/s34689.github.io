@@ -105,3 +105,66 @@ nav ul li a.active, nav ul li a:hover {
     padding: 80px;
     text-align: center;
 }
+/* เพิ่มเติมสำหรับเนื้อหาหน้าทั่วไป */
+.subtitle {
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* ปุ่มแบบสีเข้ม (สำหรับใช้บนพื้นหลังสีขาว) */
+.btn-dark {
+    border: 1px solid #1a2b4c;
+    color: #1a2b4c;
+}
+
+.btn-dark:hover {
+    background-color: #1a2b4c;
+    color: white;
+}
+
+/* จัดเลย์เอาต์การ์ดสำหรับหน้า Service */
+.card-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.card h3 {
+    color: #1a2b4c;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* กล่องข้อมูลการติดต่อสำหรับหน้า Contact */
+.contact-box {
+    background: white;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.contact-box p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+}
