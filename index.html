@@ -3,36 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>วิชญาดา จันเหลือง</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #ff66cc;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 50px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        h1 { color: #2c3e50; }
-        p { font-size: 18px; line-height: 1.6; }
-    </style>
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation Bar (เมนูนำทาง) -->
+    <header class="navbar">
+        <div class="logo">MY PORTFOLIO</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="card">
-        <h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน 👋</h1>
-        <p>สวัสดีค่ะ! ดิฉันชื่อ <strong>วิชญาดา (Wichayada)</strong></p>
-        <p>ขณะนี้กำลังศึกษา/สนใจด้าน Chinese & คณะบริหารธุรกิจ สาขาวิชาการจัดการอุตสาหกรรมท่องเที่ยวและบริการ มหาวิทยาลัยบรูพา</p>
-        <p>นี่คือเว็บไซต์แรกของฉันที่โฮสต์บน GitHub Pages!</p>
-        <a href="portfolio.html" style="display:inline-block; background:#3498db; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px;">👉 ดูแฟ้มสะสมงานของฉัน</a>
-    </div>
-</div>
+    <!-- Hero Section (ส่วนเนื้อหาหลักคล้ายในรูป) -->
+    <section class="hero">
+        <div class="hero-image">
+            <!-- ใส่รูปของคุณตรงนี้ -->
+            <img src="https://via.placeholder.com/600x400" alt="Profile Image">
+        </div>
+        <div class="hero-card">
+            <h1>If you can dream it, you can do it.</h1>
+            <p>ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของฉัน รวมผลงาน ประวัติ และช่องทางการติดต่อ</p>
+            <a href="about.html" class="btn">READ MORE</a>
+        </div>
+    </section>
 </body>
 </html>
