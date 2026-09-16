@@ -1,80 +1,63 @@
-<<div class="services-grid">
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">PORTFOLIO<span>.</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html" class="active">SERVICE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- ผลงาน 1 -->
+    <main class="page-wrapper column-layout">
+        <div class="section-header">
+            <span class="tag">WHAT I DO</span>
+            <h1>MY <span>SERVICES</span> & WORKS</h1>
+            <p>บริการด้านการพัฒนาเว็บไซต์และตัวอย่างผลงานที่เชี่ยวชาญ</p>
+        </div>
+
+       <!-- หน้า service.html -->
+<div class="services-grid">
     <div class="service-card">
         <div class="card-icon">
-            <img src="DPU.jpg" alt="DPU CAMP">
+            <img src="icon-web.png" alt="Web Development Icon">
         </div>
-        <h3>DPU CAMP</h3>
-        <p>ได้เข้าร่วมค่ายของมหาวิทยาลัยธุรกิจบัณฑิตย์ DPU</p>
+        <h3>Web Development</h3>
+        <p>พัฒนาเว็บไซต์ด้วย HTML, CSS, JavaScript และรองรับการแสดงผลทุกขนาดหน้าจอ (Responsive)</p>
     </div>
-
-    <!-- ผลงาน 2 -->
+    
     <div class="service-card">
         <div class="card-icon">
-            <img src="MISS.jpg" alt="Miss BB Angpao Top 3">
+            <img src="icon-design.png" alt="UI/UX Design Icon">
         </div>
-        <h3>Miss BB Angpao Top 3</h3>
-        <p>ความกล้าแสดงออกจึงทำให้ดิฉันได้ Miss BB อั่งเปา อันดับ 3</p>
+        <h3>UI/UX Design</h3>
+        <p>ออกแบบอินเทอร์เฟซและประสบการณ์ผู้ใช้ให้สวยงาม ใช้งานง่าย สะอาดตาด้วยหลักการสมัยใหม่</p>
     </div>
-
-    <!-- ผลงาน 3 -->
+    
     <div class="service-card">
         <div class="card-icon">
-            <img src="C97EAD2C-7351-40EF-B032-E1494F80ECED.jpeg" alt="HandWrite">
+            <img src="icon-git.png" alt="Deployment Icon">
         </div>
-        <h3>HandWrite</h3>
-        <p>ได้เข้าร่วมการคัดลายมือภาษาจีนและญี่ปุ่นระดับมัธยมศึกษาตอนปลาย</p>
-    </div>
-
-    <!-- เกียรติบัตร 1 -->
-    <div class="service-card">
-        <div class="card-icon">
-            <img src="30C4DF3A-01A2-4556-92D3-D995F60C90E4.jpeg" alt="เกียรติบัตร 1">
-        </div>
-        <h3>Educate</h3>
-        <p>เทคนิคพิชิต HSK3-4</p>
-    </div>
-
-    <!-- เกียรติบัตร 2 -->
-    <div class="service-card">
-        <div class="card-icon">
-            <img src="D2FEC9FF-78C1-429F-A0A0-178993EA538E.jpeg" alt="เกียรติบัตร 2">
-        </div>
-        <h3>Educate</h3>
-        <p>อบรบโครงการวัยรุ่นยุคใหม่ ปลอดภัยทุกเส้นทาง</p></p>
-    </div>
-
-    <!-- เกียรติบัตร 3 -->
-    <div class="service-card">
-        <div class="card-icon">
-            <img src="IMG_0042.jpeg" alt="เกียรติบัตร 3">
-        </div>
-        <h3>Choral singing show</h3>
-        <p>โชว์ร้องประสานเสียงเพลงจีนในงานวันตรุษจีนปีการศึกษา2568</p>
-    </div>
-
-    <!-- รูปภาพ 4 -->
-    <div class="service-card">
-        <div class="card-icon">
-            <img src="LCH.jpg" alt="ผลงาน 4">
-        </div>
-        <h3>Certificate</h3>
-        <p> เกียรติบัตรการคัดลายมือภาษาจีน ภาษาญี่ปุ่นเนื่องในวันแม่แห่งชาติ </p>
-    </div>
-
-    <!-- รูปภาพ 5 -->
-    <div class="service-card">
-        <div class="card-icon">
-            <img src="B667C271-7E24-4042-A360-14A393451E71.jpeg" alt="ผลงาน 5">
-        </div>
-        <h3>Certificate</h3>
-        <p>เกียรติบัตรประกวดMiss BB aungpao</p></p>
+        <h3>GitHub Deployment</h3>
+        <p>นำเว็บไซต์ขึ้นโฮสต์บน GitHub Pages พร้อมตั้งค่าโดเมนและจัดการ Source Code อย่างเป็นระบบ</p>
     </div>
 </div>
-    <!-- ปุ่มไปหน้า Contact -->
-<div class="contact-button-area">
-    <a href="contact.html" class="contact-btn">
-        CONTACT
-    </a>
-</div>
+
+        <div class="button-group center-buttons">
+            <a href="about.html" class="btn btn-outline">← เกี่ยวกับฉัน</a>
+            <a href="contact.html" class="btn btn-glow">ติดต่องาน / สอบถามเพิ่มเติม →</a>
+        </div>
+    </main>
+</body>
+</html>
